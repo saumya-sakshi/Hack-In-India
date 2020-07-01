@@ -13,6 +13,7 @@ Button b1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         b1=findViewById(R.id.button1);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,5 +22,9 @@ Button b1;
                 startActivity(intent);
             }
         });
+
+//        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//        startActivity(intent);
+
     }
 }
